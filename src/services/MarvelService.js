@@ -24,7 +24,7 @@ class MarvelService {
         return this._transformCharacter(res.data.results[0]);
     }
 
-    _transformCharacter = (char) => {
+    _transformCharacter = (char) => { 
         return {
             name: char.name,
             description: char.description ? `${char.description.slice(0, 210)}...` : 'There is no description for this character',
