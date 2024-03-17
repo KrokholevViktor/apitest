@@ -14,6 +14,7 @@ const CharInfo = (props) => {
 
     useEffect(() => {
         updateChar();
+        // eslint-disable-next-line
     }, [props.charId])
 
 
@@ -79,6 +80,7 @@ const View = ({char}) => {
                 {   
                     comics.map((item, i) => {
                         if (i >= 10) {
+                            // eslint-disable-next-line
                             return;
                         }
                         return (
